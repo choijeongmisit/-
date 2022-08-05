@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="newone.css">
+  <title>오늘 뭐하지☺</title>
+  <style>
+    @media (min-width:576px){
+    .col-sm{
+        -ms-flex-preferred-size:0;
+        flex-basis:0;
+        -ms-flex-positive:1;
+        flex-grow:1;
+        max-width:100%
+    }
+  }
+  </style>
+  <link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+  <div id="weather">
+    <span></span>
+    <span></span>
+  </div>
+  <section class="container">
+    
+    <form id="login-form" class="hidden">
+      <input required maxlength="15"
+      type="text" 
+      placeholder="이름이 뭐에요?">
+      <input type="submit" value="Log In">
+    </form>
+    <div class="p-3 pt-md-5 pb-md-4 text-center">
+    <h2 id="clock">00:00:00</h2>
+  </div>
+</section>
+  <h1 id="greeting" class="hidden"></h1>
+    <form action="" id="todo-form">
+      <input id="todo_input" type="text" placeholder="오늘의 할 일" required/> 
+      <input type="submit" id="todo_submit" value="">
+      <br>
+    </form>
+    <section class="container">
+    <div class="row mb-5 text-center my-3">
+    <div id="quote">
+      <span class="quotes">
+      <
+      </span>
+      
+      <span class="author">
+        
+      </span>
+  </div>
+</div>
+</section>
+    <ul id="todo-list">
+    </ul>
+
+
+  <script src="clock.js"></script>
+  <script src="greetings.js"></script>
+  <script src="quotes.js"></script>
+  <script src="background.js"></script>
+  <script src="todo.js"></script>
+  <script src="weather.js"></script>
+  <script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html> 
